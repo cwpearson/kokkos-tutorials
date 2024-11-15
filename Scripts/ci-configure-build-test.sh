@@ -48,6 +48,12 @@ if [ "$backend" == CUDA ]; then
   BEGIN_SOLUTION_EXERCISES+=(04)
   BEGIN_SOLUTION_EXERCISES+=(multi_gpu_cuda)
 fi
+
+# tasking doesn't seem to work on CUDA
+if [ ! "$backend" == CUDA ]; then
+  BEGIN_SOLUTION_EXERCISES+=(tasking)
+fi
+
 if [ "$backend" == OPENMP ]; then
   BEGIN_SOLUTIONS_EXERCISES+=(unique_token)
 fi
