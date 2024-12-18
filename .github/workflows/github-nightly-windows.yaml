@@ -1,4 +1,4 @@
-name: Hosted Runners (windows)
+name: Nightly, Hosted Runners, windows
 
 on:
   schedule:
